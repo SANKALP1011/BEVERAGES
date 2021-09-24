@@ -10,6 +10,7 @@ import UIKit
 import Lottie
 
 class MenuViewController: UIViewController{
+    
     @IBOutlet var animationView1: AnimationView!
     @IBOutlet var orderView: UIView!
     @IBOutlet var orderButton: UIButton!
