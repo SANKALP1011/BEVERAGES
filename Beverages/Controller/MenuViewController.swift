@@ -7,9 +7,10 @@
 
 import Foundation
 import UIKit
+import Lottie
 
 class MenuViewController: UIViewController{
-    
+    @IBOutlet var animationView1: AnimationView!
     @IBOutlet var orderView: UIView!
     @IBOutlet var orderButton: UIButton!
     @IBOutlet var coffeLabel: UILabel!
@@ -21,6 +22,7 @@ class MenuViewController: UIViewController{
   
     override func viewDidLoad() {
         setupUI()
+        lottieAnimation()
     }
     
     private func setupUI(){
@@ -54,6 +56,17 @@ class MenuViewController: UIViewController{
         chocoView.layer.shadowRadius = 20
         chocoView.layer.shadowOffset = .zero
 }
+    
+    private func lottieAnimation(){
+        let animationView1 = Lottie.AnimationView(name: "order.json")
+        animationView1.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(animationView1)
+        animationView1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        animationView1.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        animationView1.heightAnchor.constraint(equalToConstant:  200).isActive = true
+        animationView1.widthAnchor.constraint(equalToConstant: 200).isActive = true
+}
+    
     @IBAction func orderButton(_sender: UIButton!){
         
     }

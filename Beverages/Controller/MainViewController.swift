@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import Lottie
 
 class MainViewController: UIViewController {
     
-    @IBOutlet var animationView: UIView!
+    @IBOutlet var animationView: AnimationView!
     @IBOutlet var mainView: UIView!
     @IBOutlet var NextButton: UIButton!
     @IBOutlet var mainLabel: UILabel!
@@ -18,6 +19,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        LottieAnimation()
     }
     
     func setupUI(){
@@ -38,6 +40,19 @@ class MainViewController: UIViewController {
         mainLabel.layer.shadowColor = UIColor.black.cgColor
         mainLabel.layer.shadowRadius = 10
         mainLabel.layer.shadowOffset = .zero
+        mainLabel.text = "Beverage"
+}
+    
+    private func LottieAnimation(){
+        let animationView = Lottie.AnimationView(name: "tea.json")
+        animationView.translatesAutoresizingMaskIntoConstraints = false
+        self.view.addSubview(animationView)
+        animationView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        animationView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        animationView.heightAnchor.constraint(equalToConstant: 200).isActive = true
+        animationView.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        animationView.play()
+        animationView.loopMode = .loop
 }
     
     @IBAction func NextButton(_sender: UIButton!){
