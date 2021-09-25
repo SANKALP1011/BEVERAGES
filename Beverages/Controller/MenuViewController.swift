@@ -11,7 +11,7 @@ import Lottie
 
 class MenuViewController: UIViewController{
     
-    @IBOutlet var animationView1: AnimationView!
+    @IBOutlet var animationView: AnimationView!
     @IBOutlet var orderView: UIView!
     @IBOutlet var orderButton: UIButton!
     @IBOutlet var coffeLabel: UILabel!
@@ -20,6 +20,7 @@ class MenuViewController: UIViewController{
     @IBOutlet var coffeView: UIView!
     @IBOutlet var teaView: UIView!
     @IBOutlet var chocoView: UIView!
+    
   
     override func viewDidLoad() {
         setupUI()
@@ -56,17 +57,32 @@ class MenuViewController: UIViewController{
         chocoView.layer.shadowColor = UIColor.black.cgColor
         chocoView.layer.shadowRadius = 20
         chocoView.layer.shadowOffset = .zero
+        
+        animationView.layer.cornerRadius = 30
+        animationView.layer.shadowOpacity = 0.5
+        animationView.layer.shadowColor = UIColor.black.cgColor
+        animationView.layer.shadowRadius = 10
+        animationView.layer.shadowOffset = .zero
 }
     
     private func lottieAnimation(){
-        let animationView1 = Lottie.AnimationView(name: "order.json")
-        animationView1.translatesAutoresizingMaskIntoConstraints = false
-        self.view.addSubview(animationView1)
-        animationView1.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-        animationView1.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-        animationView1.heightAnchor.constraint(equalToConstant:  200).isActive = true
-        animationView1.widthAnchor.constraint(equalToConstant: 200).isActive = true
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        animationView.play()
 }
+    
+    @IBAction func coffeeStepper(_sender: UIStepper){
+        
+    }
+    
+    @IBAction func teaStepper(_sender: UIStepper){
+        
+    }
+    
+    @IBAction func chocoStepper(_sender: UIStepper){
+        
+    }
     
     @IBAction func orderButton(_sender: UIButton!){
         

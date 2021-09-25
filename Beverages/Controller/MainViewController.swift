@@ -7,6 +7,7 @@
 
 import UIKit
 import Lottie
+import JGProgressHUD
 
 class MainViewController: UIViewController {
     
@@ -15,6 +16,7 @@ class MainViewController: UIViewController {
     @IBOutlet var NextButton: UIButton!
     @IBOutlet var mainLabel: UILabel!
     
+    private let spinner = JGProgressHUD(style: .dark)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,8 +59,12 @@ class MainViewController: UIViewController {
 }
     
     @IBAction func NextButton(_sender: UIButton!){
+        self.spinner.show(in: self.view)
+        spinner.minimumDisplayTime = 20
         performSegue(withIdentifier: "goToMenu", sender: self)
-    }
+        
+}
+
 
 
 }
