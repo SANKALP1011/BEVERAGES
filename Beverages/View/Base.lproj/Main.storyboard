@@ -78,7 +78,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="order"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="Coffe"/>
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xE6-Rx-gya">
@@ -197,11 +197,40 @@
                         <outlet property="teaLabel" destination="umd-gU-qe8" id="AYf-ho-mSp"/>
                         <outlet property="teaQunatity" destination="3rS-2C-evT" id="d9D-2P-quN"/>
                         <outlet property="teaView" destination="eRZ-Lf-HkO" id="bGS-UV-zX0"/>
+                        <segue destination="dvv-Bo-KlZ" kind="presentation" identifier="goToOrder" id="rxq-Ri-KBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doI-mH-57s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="976.81159420289862" y="97.767857142857139"/>
+        </scene>
+        <!--Order View Controller-->
+        <scene sceneID="Qmw-bV-68E">
+            <objects>
+                <viewController id="dvv-Bo-KlZ" customClass="OrderViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V83-vk-XoG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-Ux-b1f" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="87" y="146" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="order"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="iU8-4j-CKt"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="OG3-Ux-b1f" id="A9x-aC-0kQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="buE-xQ-WbL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1803" y="103"/>
         </scene>
     </scenes>
     <resources>
