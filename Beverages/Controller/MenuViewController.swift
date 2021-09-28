@@ -109,6 +109,7 @@ class MenuViewController: UIViewController{
     @IBAction func orderButton(_sender: UIButton!){
         totalPrice = teaOrder*teaPrice + coffeeNumberOfOrder*coffePrice + chocoOrder*chocoPrice
         print(totalPrice)
+        performSegue(withIdentifier: "goToOrder", sender: self)
         
         
     }
