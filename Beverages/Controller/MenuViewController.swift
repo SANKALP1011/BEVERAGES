@@ -20,6 +20,22 @@ class MenuViewController: UIViewController{
     @IBOutlet var coffeView: UIView!
     @IBOutlet var teaView: UIView!
     @IBOutlet var chocoView: UIView!
+    @IBOutlet var coffeePlaced: UILabel!
+    @IBOutlet var teaQunatity: UILabel!
+    @IBOutlet var chocoQuantuty: UILabel!
+    
+    
+    var coffeeNumberOfOrder = 0
+    var teaOrder = 0
+    var chocoOrder = 0
+    
+    var coffePrice = 150
+    var teaPrice = 100
+    var chocoPrice = 120
+    
+    var totalPrice = 0
+    
+    
     
   
     override func viewDidLoad() {
@@ -72,19 +88,28 @@ class MenuViewController: UIViewController{
         animationView.play()
 }
     
-    @IBAction func coffeeStepper(_sender: UIStepper){
+    @IBAction func coffeeStepper(_ sender: UIStepper){
+        coffeePlaced.text = String(format: "%.0f", sender.value)
+        coffeeNumberOfOrder = Int(sender.value)
         
-    }
+}
     
     @IBAction func teaStepper(_sender: UIStepper){
+        teaQunatity.text = String(format: "%.0f", _sender.value)
+        teaOrder = Int(_sender.value)
         
     }
     
     @IBAction func chocoStepper(_sender: UIStepper){
+        chocoQuantuty.text = String(format: "%.0f", _sender.value)
+        chocoOrder = Int(_sender.value)
         
     }
     
     @IBAction func orderButton(_sender: UIButton!){
+        totalPrice = teaOrder*teaPrice + coffeeNumberOfOrder*coffePrice + chocoOrder*chocoPrice
+        print(totalPrice)
+        
         
     }
 }

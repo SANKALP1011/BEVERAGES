@@ -107,6 +107,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="d2V-F7-hv7">
+                                        <rect key="frame" x="280" y="21" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="coffeeStepper:" destination="Qgr-WN-wgf" eventType="valueChanged" id="4ru-fn-nNS"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OmM-lU-Lxf">
+                                        <rect key="frame" x="190" y="8" width="42" height="45"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -116,6 +130,20 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tea" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="umd-gU-qe8">
                                         <rect key="frame" x="0.0" y="0.0" width="130" height="68"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="03X-Nv-D8h">
+                                        <rect key="frame" x="280" y="22" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="teaStepperWith_sender:" destination="Qgr-WN-wgf" eventType="valueChanged" id="OfF-zB-pQc"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rS-2C-evT">
+                                        <rect key="frame" x="190" y="22" width="42" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -135,6 +163,20 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" maximumValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="caY-fB-dCN">
+                                        <rect key="frame" x="280" y="28" width="94" height="32"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <connections>
+                                            <action selector="chocoStepperWith_sender:" destination="Qgr-WN-wgf" eventType="valueChanged" id="FRg-iB-6of"/>
+                                        </connections>
+                                    </stepper>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZJj-nM-nIw">
+                                        <rect key="frame" x="196" y="28" width="42" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -145,12 +187,15 @@
                     <connections>
                         <outlet property="animationView" destination="eZm-Qs-kIq" id="qsm-ZN-EZA"/>
                         <outlet property="chocoLabel" destination="FgB-hI-lio" id="3wk-uw-i3d"/>
+                        <outlet property="chocoQuantuty" destination="ZJj-nM-nIw" id="JLa-YZ-69A"/>
                         <outlet property="chocoView" destination="e4S-g5-vBm" id="G3g-zW-FZh"/>
                         <outlet property="coffeLabel" destination="RSK-hE-0X6" id="XhU-Wx-gB0"/>
                         <outlet property="coffeView" destination="tlB-zD-MCt" id="r7m-XE-qLj"/>
+                        <outlet property="coffeePlaced" destination="OmM-lU-Lxf" id="ZuJ-pY-7di"/>
                         <outlet property="orderButton" destination="w0o-Zz-d2K" id="idD-Dg-wJI"/>
                         <outlet property="orderView" destination="xE6-Rx-gya" id="UBr-fV-M9Y"/>
                         <outlet property="teaLabel" destination="umd-gU-qe8" id="AYf-ho-mSp"/>
+                        <outlet property="teaQunatity" destination="3rS-2C-evT" id="d9D-2P-quN"/>
                         <outlet property="teaView" destination="eRZ-Lf-HkO" id="bGS-UV-zX0"/>
                     </connections>
                 </viewController>
