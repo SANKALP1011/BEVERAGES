@@ -12,9 +12,14 @@ import Lottie
 class OrderViewController: UIViewController{
     
     @IBOutlet var animationView: AnimationView!
+    @IBOutlet var ThankYouLabel: UILabel!
+    @IBOutlet var orderLabel: UILabel!
+    
+    var TotalOrderPrice = 0
     
     override func viewDidLoad() {
         lottiAnimation()
+        orderLabel.text = "You have to pay \(TotalOrderPrice) Rupees for your order."
     }
     
     func lottiAnimation(){
@@ -23,9 +28,4 @@ class OrderViewController: UIViewController{
         animationView.loopMode = .loop
         animationView.play()
     }
-    
-    
-    
-    
-    
 }

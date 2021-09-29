@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Lottie
+import JGProgressHUD
 
 class MenuViewController: UIViewController{
     
@@ -24,20 +25,16 @@ class MenuViewController: UIViewController{
     @IBOutlet var teaQunatity: UILabel!
     @IBOutlet var chocoQuantuty: UILabel!
     
-    
     var coffeeNumberOfOrder = 0
     var teaOrder = 0
     var chocoOrder = 0
-    
     var coffePrice = 150
     var teaPrice = 100
     var chocoPrice = 120
-    
     var totalPrice = 0
     
+    private let spinner = JGProgressHUD(style: .dark)
     
-    
-  
     override func viewDidLoad() {
         setupUI()
         lottieAnimation()
@@ -97,20 +94,25 @@ class MenuViewController: UIViewController{
     @IBAction func teaStepper(_sender: UIStepper){
         teaQunatity.text = String(format: "%.0f", _sender.value)
         teaOrder = Int(_sender.value)
-        
-    }
+}
     
     @IBAction func chocoStepper(_sender: UIStepper){
         chocoQuantuty.text = String(format: "%.0f", _sender.value)
         chocoOrder = Int(_sender.value)
-        
-    }
+}
     
     @IBAction func orderButton(_sender: UIButton!){
+        self.spinner.show(in: view)
         totalPrice = teaOrder*teaPrice + coffeeNumberOfOrder*coffePrice + chocoOrder*chocoPrice
         print(totalPrice)
         performSegue(withIdentifier: "goToOrder", sender: self)
-        
+        spinner.dismiss()
+}
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToOrder"{
+            let destinationVc = segue.destination as! OrderViewController
+            destinationVc.TotalOrderPrice = totalPrice
+        }
         
     }
 }
