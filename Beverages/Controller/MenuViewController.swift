@@ -44,37 +44,37 @@ class MenuViewController: UIViewController{
         orderView.layer.cornerRadius = 30
         orderView.layer.shadowOpacity = 0.5
         orderView.layer.shadowColor = UIColor.black.cgColor
-        orderView.layer.shadowRadius = 20
+        orderView.layer.shadowRadius = 5
         orderView.layer.shadowOffset = .zero
         
         orderButton.layer.cornerRadius = 30
         orderButton.layer.shadowOpacity = 0.5
         orderButton.layer.shadowColor = UIColor.black.cgColor
-        orderButton.layer.shadowRadius = 20
+        orderButton.layer.shadowRadius = 5
         orderButton.layer.shadowOffset = .zero
         
         coffeView.layer.cornerRadius = 30
         coffeView.layer.shadowOpacity = 0.5
         coffeView.layer.shadowColor = UIColor.black.cgColor
-        coffeView.layer.shadowRadius = 20
+        coffeView.layer.shadowRadius = 5
         coffeView.layer.shadowOffset = .zero
         
         teaView.layer.cornerRadius = 30
         teaView.layer.shadowOpacity = 0.5
         teaView.layer.shadowColor = UIColor.black.cgColor
-        teaView.layer.shadowRadius = 20
+        teaView.layer.shadowRadius = 5
         teaView.layer.shadowOffset = .zero
         
         chocoView.layer.cornerRadius = 30
         chocoView.layer.shadowOpacity = 0.5
         chocoView.layer.shadowColor = UIColor.black.cgColor
-        chocoView.layer.shadowRadius = 20
+        chocoView.layer.shadowRadius = 5
         chocoView.layer.shadowOffset = .zero
         
         animationView.layer.cornerRadius = 30
         animationView.layer.shadowOpacity = 0.5
         animationView.layer.shadowColor = UIColor.black.cgColor
-        animationView.layer.shadowRadius = 10
+        animationView.layer.shadowRadius = 5
         animationView.layer.shadowOffset = .zero
 }
     
@@ -101,13 +101,18 @@ class MenuViewController: UIViewController{
         chocoOrder = Int(_sender.value)
 }
     
-    @IBAction func orderButton(_sender: UIButton!){
+    func orderCalculations(){
         self.spinner.show(in: view)
         totalPrice = teaOrder*teaPrice + coffeeNumberOfOrder*coffePrice + chocoOrder*chocoPrice
         print(totalPrice)
         performSegue(withIdentifier: "goToOrder", sender: self)
         spinner.dismiss()
-}
+    }
+    
+    
+    @IBAction func orderButton(_sender: UIButton!){
+        orderCalculations()
+        }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOrder"{
             let destinationVc = segue.destination as! OrderViewController
