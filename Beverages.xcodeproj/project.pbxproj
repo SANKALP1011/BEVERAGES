@@ -16,8 +16,8 @@
 		A04B2E0A27075AFE00C47874 /* FirebaseInAppMessagingSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0927075AFE00C47874 /* FirebaseInAppMessagingSwift-Beta */; };
 		A04B2E0C27075AFE00C47874 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0B27075AFE00C47874 /* FirebaseAuth */; };
 		A04B2E0E27075AFE00C47874 /* FirebaseInAppMessaging-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0D27075AFE00C47874 /* FirebaseInAppMessaging-Beta */; };
-		A04B2E1027075BCE00C47874 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B2E0F27075BCE00C47874 /* LogViewController.swift */; };
 		A04B2E1227075BDE00C47874 /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B2E1127075BDE00C47874 /* SignViewController.swift */; };
+		A04B2E1427075FAD00C47874 /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A04B2E1327075FAD00C47874 /* LogViewController.swift */; };
 		A053DCDA26FE4A2200E434E6 /* tea.json in Resources */ = {isa = PBXBuildFile; fileRef = A053DCD926FE4A2200E434E6 /* tea.json */; };
 		A053DCDC26FE4A2C00E434E6 /* order.json in Resources */ = {isa = PBXBuildFile; fileRef = A053DCDB26FE4A2C00E434E6 /* order.json */; };
 		A0588B2926FB80D000EC214D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0588B2826FB80D000EC214D /* AppDelegate.swift */; };
@@ -53,8 +53,8 @@
 
 /* Begin PBXFileReference section */
 		A04B2DFE27075A6A00C47874 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
-		A04B2E0F27075BCE00C47874 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		A04B2E1127075BDE00C47874 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		A04B2E1327075FAD00C47874 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		A053DCD926FE4A2200E434E6 /* tea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tea.json; sourceTree = "<group>"; };
 		A053DCDB26FE4A2C00E434E6 /* order.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order.json; sourceTree = "<group>"; };
 		A0588B2526FB80D000EC214D /* Beverages.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beverages.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,8 +173,8 @@
 				A0588B2C26FB80D000EC214D /* MainViewController.swift */,
 				A0588B5B26FB84AB00EC214D /* MenuViewController.swift */,
 				A09F3D9B27036A660071D2DD /* OrderViewController.swift */,
-				A04B2E0F27075BCE00C47874 /* LogViewController.swift */,
 				A04B2E1127075BDE00C47874 /* SignViewController.swift */,
+				A04B2E1327075FAD00C47874 /* LogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -348,8 +348,8 @@
 				A0588B2D26FB80D000EC214D /* MainViewController.swift in Sources */,
 				A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */,
 				A0588B2926FB80D000EC214D /* AppDelegate.swift in Sources */,
-				A04B2E1027075BCE00C47874 /* LogViewController.swift in Sources */,
 				A0588B2B26FB80D000EC214D /* SceneDelegate.swift in Sources */,
+				A04B2E1427075FAD00C47874 /* LogViewController.swift in Sources */,
 				A0588B5C26FB84AB00EC214D /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
