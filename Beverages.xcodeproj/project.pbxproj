@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		A034D12C26FDF2AE00A8E884 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A034D12B26FDF2AE00A8E884 /* Lottie */; };
-		A04B2DFF27075A6A00C47874 /* GoogleService-Info .plist in Resources */ = {isa = PBXBuildFile; fileRef = A04B2DFE27075A6A00C47874 /* GoogleService-Info .plist */; };
+		A040E1AD2709FCA900A409DB /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040E1AC2709FCA900A409DB /* DatabaseModel.swift */; };
+		A04B2DFF27075A6A00C47874 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */; };
 		A04B2E0227075AFE00C47874 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0127075AFE00C47874 /* FirebaseFirestore */; };
 		A04B2E0427075AFE00C47874 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0327075AFE00C47874 /* FirebaseDatabase */; };
 		A04B2E0627075AFE00C47874 /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = A04B2E0527075AFE00C47874 /* FirebaseDatabaseSwift-Beta */; };
@@ -52,7 +53,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A04B2DFE27075A6A00C47874 /* GoogleService-Info .plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info .plist"; sourceTree = "<group>"; };
+		A040E1AC2709FCA900A409DB /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
+		A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A04B2E1127075BDE00C47874 /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		A04B2E1327075FAD00C47874 /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		A053DCD926FE4A2200E434E6 /* tea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tea.json; sourceTree = "<group>"; };
@@ -110,6 +112,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A040E1AB2709FC8E00A409DB /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				A040E1AC2709FCA900A409DB /* DatabaseModel.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
 		A0588B1C26FB80D000EC214D = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +145,7 @@
 			children = (
 				A0588B2826FB80D000EC214D /* AppDelegate.swift */,
 				A0588B2A26FB80D000EC214D /* SceneDelegate.swift */,
+				A040E1AB2709FC8E00A409DB /* Database */,
 				A0588B5A26FB812D00EC214D /* Model. */,
 				A0588B5926FB812A00EC214D /* View */,
 				A0588B5826FB811D00EC214D /* Controller */,
@@ -143,7 +154,7 @@
 				A0588B3626FB80D100EC214D /* Info.plist */,
 				A053DCD926FE4A2200E434E6 /* tea.json */,
 				A053DCDB26FE4A2C00E434E6 /* order.json */,
-				A04B2DFE27075A6A00C47874 /* GoogleService-Info .plist */,
+				A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */,
 				A09F3D9D27036B220071D2DD /* Coffe.json */,
 			);
 			path = Beverages;
@@ -318,7 +329,7 @@
 				A053DCDA26FE4A2200E434E6 /* tea.json in Resources */,
 				A053DCDC26FE4A2C00E434E6 /* order.json in Resources */,
 				A0588B3026FB80D000EC214D /* Main.storyboard in Resources */,
-				A04B2DFF27075A6A00C47874 /* GoogleService-Info .plist in Resources */,
+				A04B2DFF27075A6A00C47874 /* GoogleService-Info.plist in Resources */,
 				A09F3D9E27036B230071D2DD /* Coffe.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,6 +359,7 @@
 				A0588B2D26FB80D000EC214D /* MainViewController.swift in Sources */,
 				A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */,
 				A0588B2926FB80D000EC214D /* AppDelegate.swift in Sources */,
+				A040E1AD2709FCA900A409DB /* DatabaseModel.swift in Sources */,
 				A0588B2B26FB80D000EC214D /* SceneDelegate.swift in Sources */,
 				A04B2E1427075FAD00C47874 /* LogViewController.swift in Sources */,
 				A0588B5C26FB84AB00EC214D /* MenuViewController.swift in Sources */,
