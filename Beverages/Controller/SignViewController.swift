@@ -23,6 +23,8 @@ class SignViewController: UIViewController{
         setupUI()
     }
     
+    var hjh = 78
+    
     private func setupUI(){
         emailView.layer.cornerRadius = 30
         emailView.layer.shadowOpacity = 0.5
