@@ -19,6 +19,10 @@ class SignViewController: UIViewController{
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
     
+    override func viewDidLoad() {
+        setupUI()
+    }
+    
     private func setupUI(){
         emailView.layer.cornerRadius = 30
         emailView.layer.shadowOpacity = 0.5
