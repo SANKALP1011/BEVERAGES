@@ -9,6 +9,7 @@ import Foundation
 import UIKit
 import SwiftUI
 import Firebase
+import JGProgressHUD
 
 class SignViewController: UIViewController{
     
@@ -18,6 +19,8 @@ class SignViewController: UIViewController{
     @IBOutlet weak var SignView: UIView!
     @IBOutlet weak var emailView: UIView!
     @IBOutlet weak var passwordView: UIView!
+    
+    let spineer = JGProgressHUD(style: .dark)
     
     override func viewDidLoad() {
         setupUI()
