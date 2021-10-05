@@ -45,6 +45,8 @@ class LogViewController: UIViewController{
         passView.layer.shadowColor = UIColor.black.cgColor
         passView.layer.shadowRadius = 5
         passView.layer.shadowOffset = .zero
+        
+        
 }
     
     @IBAction func logButton(_sender: UIButton!){
@@ -54,6 +56,7 @@ class LogViewController: UIViewController{
             }
             else{
                 print("userLoggedIn")
+                self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
         }
     }
