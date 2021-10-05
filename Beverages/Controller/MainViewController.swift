@@ -13,8 +13,12 @@ class MainViewController: UIViewController {
     
     @IBOutlet var animationView: AnimationView!
     @IBOutlet var nextView: UIView!
-    @IBOutlet var NextButton: UIButton!
+    @IBOutlet var mainSignView: UIView!
+    @IBOutlet var signOption: UIButton!
+    @IBOutlet var logOption: UIButton!
     @IBOutlet var mainLabel: UILabel!
+    
+    
     
     private let spinner = JGProgressHUD(style: .dark)
     var text = "Beverages"
@@ -41,19 +45,15 @@ class MainViewController: UIViewController {
         animationView.layer.shadowColor = UIColor.black.cgColor
         animationView.layer.shadowRadius = 5
         animationView.layer.shadowOffset = .zero
-
-        NextButton.layer.cornerRadius = 30
-        NextButton.layer.shadowOpacity = 0.5
-        NextButton.layer.shadowColor = UIColor.black.cgColor
-        NextButton.layer.shadowRadius = 5
-        NextButton.layer.shadowOffset = .zero
+   
+        mainSignView.layer.cornerRadius = 20
+        mainSignView.layer.shadowOpacity = 0.5
+        mainSignView.layer.shadowColor = UIColor.black.cgColor
+        mainSignView.layer.shadowRadius = 5
+        mainSignView.layer.shadowOffset = .zero
         
-        mainLabel.layer.cornerRadius = 30
-        mainLabel.layer.shadowOpacity = 0.5
-        mainLabel.layer.shadowColor = UIColor.black.cgColor
-        mainLabel.layer.shadowRadius = 5
-        mainLabel.layer.shadowOffset = .zero
-        mainLabel.text = "Beverage"
+        logOption.layer.cornerRadius = 30
+        signOption.layer.cornerRadius = 30
 }
     
     private func LottieAnimation(){
@@ -63,13 +63,13 @@ class MainViewController: UIViewController {
         animationView.play()
 }
     
-    @IBAction func NextButton(_sender: UIButton!){
-        self.spinner.show(in: self.view)
-        spinner.minimumDisplayTime = 20
-        performSegue(withIdentifier: "goToMenu", sender: self)
-        
-}
-
+    @IBAction func logOption(_sender: UIButton!){
+        performSegue(withIdentifier: "goToLog", sender: self)
+    }
+    
+    @IBAction func signOption(_sender: UIButton!){
+        performSegue(withIdentifier: "goToSign", sender: self)
+    }
 
 
 }
