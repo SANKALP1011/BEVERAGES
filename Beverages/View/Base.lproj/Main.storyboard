@@ -40,27 +40,11 @@
                                 <rect key="frame" x="114" y="655" width="180" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <state key="normal" title="Log In"/>
+                                <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="logOptionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-8N-YnY"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-GE-iYo">
-                                <rect key="frame" x="114" y="751" width="180" height="90"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JVl-a4-7xw">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="90"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                        <state key="normal" title="Sign"/>
-                                        <connections>
-                                            <action selector="signOptionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="onb-Z3-mae"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -68,7 +52,6 @@
                     <connections>
                         <outlet property="animationView" destination="3KY-0q-g91" id="YmU-A4-Tec"/>
                         <outlet property="mainLabel" destination="IUx-Mj-HtU" id="ouX-Ea-bcH"/>
-                        <outlet property="mainSignView" destination="RtS-GE-iYo" id="TBd-ED-Xvd"/>
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
                         <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="CdA-Yh-JN7"/>
                     </connections>

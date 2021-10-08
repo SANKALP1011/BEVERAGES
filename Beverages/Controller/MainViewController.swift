@@ -63,9 +63,6 @@ class MainViewController: UIViewController {
         performSegue(withIdentifier: "goToMenu", sender: self)
     }
     
-    @IBAction func signOption(_sender: UIButton!){
-        performSegue(withIdentifier: "goToSign", sender: self)
-    }
 
 
 }
