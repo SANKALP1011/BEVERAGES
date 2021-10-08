@@ -5,10 +5,8 @@
 //  Created by Sankalp Pandey on 01/10/21.
 //
 
-import Foundation
 import UIKit
 import Firebase
-import SwiftUI
 
 class LogViewController: UIViewController{
     

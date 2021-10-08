@@ -14,8 +14,6 @@ class MainViewController: UIViewController {
     @IBOutlet var animationView: AnimationView!
     @IBOutlet var nextView: UIView!
     @IBOutlet var mainSignView: UIView!
-    @IBOutlet var signOption: UIButton!
-    @IBOutlet var logOption: UIButton!
     @IBOutlet var mainLabel: UILabel!
     
     
@@ -52,8 +50,6 @@ class MainViewController: UIViewController {
         mainSignView.layer.shadowRadius = 5
         mainSignView.layer.shadowOffset = .zero
         
-        logOption.layer.cornerRadius = 30
-        signOption.layer.cornerRadius = 30
 }
     
     private func LottieAnimation(){
@@ -64,7 +60,7 @@ class MainViewController: UIViewController {
 }
     
     @IBAction func logOption(_sender: UIButton!){
-        performSegue(withIdentifier: "goToLog", sender: self)
+        performSegue(withIdentifier: "goToMenu", sender: self)
     }
     
     @IBAction func signOption(_sender: UIButton!){
