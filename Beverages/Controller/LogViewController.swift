@@ -2,7 +2,7 @@
 //  LogViewController.swift
 //  Beverages
 //
-//  Created by Sankalp Pandey on 01/10/21.
+//  Created by Sankalp Pandey on 09/10/21.
 //
 
 import UIKit
@@ -59,3 +59,4 @@ class LogViewController: UIViewController{
         }
     }
 }
+
