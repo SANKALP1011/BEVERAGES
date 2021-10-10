@@ -13,7 +13,7 @@ class MainViewController: UIViewController {
     
     @IBOutlet var animationView: AnimationView!
     @IBOutlet var nextView: UIView!
-    @IBOutlet var mainSignView: UIView!
+    
     @IBOutlet var mainLabel: UILabel!
     
     
@@ -44,11 +44,7 @@ class MainViewController: UIViewController {
         animationView.layer.shadowRadius = 5
         animationView.layer.shadowOffset = .zero
    
-        mainSignView.layer.cornerRadius = 20
-        mainSignView.layer.shadowOpacity = 0.5
-        mainSignView.layer.shadowColor = UIColor.black.cgColor
-        mainSignView.layer.shadowRadius = 5
-        mainSignView.layer.shadowOffset = .zero
+      
         
 }
     

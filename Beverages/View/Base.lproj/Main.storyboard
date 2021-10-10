@@ -53,7 +53,7 @@
                         <outlet property="animationView" destination="3KY-0q-g91" id="YmU-A4-Tec"/>
                         <outlet property="mainLabel" destination="IUx-Mj-HtU" id="ouX-Ea-bcH"/>
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
-                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="CdA-Yh-JN7"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="1Kc-gg-4Bt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
