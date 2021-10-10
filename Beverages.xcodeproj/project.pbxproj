@@ -160,7 +160,6 @@
 				A0588B2826FB80D000EC214D /* AppDelegate.swift */,
 				A0588B2A26FB80D000EC214D /* SceneDelegate.swift */,
 				A040E1AB2709FC8E00A409DB /* Database */,
-				A0588B5A26FB812D00EC214D /* Model. */,
 				A0588B5926FB812A00EC214D /* View */,
 				A0588B5826FB811D00EC214D /* Controller */,
 				A0588B3126FB80D100EC214D /* Assets.xcassets */,
@@ -209,13 +208,6 @@
 				A0588B2E26FB80D000EC214D /* Main.storyboard */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		A0588B5A26FB812D00EC214D /* Model. */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model.;
 			sourceTree = "<group>";
 		};
 		A0F0A01D270FF8A500A270D7 /* Frameworks */ = {
