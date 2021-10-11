@@ -55,7 +55,7 @@ class MainViewController: UIViewController {
         animationView.play()
 }
     
-    @IBAction func logOption(_sender: UIButton!){
+    @IBAction func NextButton(_sender: UIButton!){
         performSegue(withIdentifier: "goToMenu", sender: self)
     }
     

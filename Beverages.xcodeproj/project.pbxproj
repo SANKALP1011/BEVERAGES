@@ -13,6 +13,7 @@
 		A0021EDB271097F0008F5886 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A0021EDA271097F0008F5886 /* JGProgressHUD */; };
 		A034D12C26FDF2AE00A8E884 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A034D12B26FDF2AE00A8E884 /* Lottie */; };
 		A040E1AD2709FCA900A409DB /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040E1AC2709FCA900A409DB /* DatabaseModel.swift */; };
+		A042A2D427148C8500F1FF5D /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A2D327148C8500F1FF5D /* LogViewController.swift */; };
 		A04B2DFF27075A6A00C47874 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */; };
 		A053DCDA26FE4A2200E434E6 /* tea.json in Resources */ = {isa = PBXBuildFile; fileRef = A053DCD926FE4A2200E434E6 /* tea.json */; };
 		A053DCDC26FE4A2C00E434E6 /* order.json in Resources */ = {isa = PBXBuildFile; fileRef = A053DCDB26FE4A2C00E434E6 /* order.json */; };
@@ -56,6 +57,7 @@
 		68FE316EAFF6F744AF2E7E07 /* Pods_BeveragesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeveragesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		982C19F9500D75833D84DF30 /* Pods-BeveragesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeveragesTests.release.xcconfig"; path = "Target Support Files/Pods-BeveragesTests/Pods-BeveragesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A040E1AC2709FCA900A409DB /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
+		A042A2D327148C8500F1FF5D /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A053DCD926FE4A2200E434E6 /* tea.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = tea.json; sourceTree = "<group>"; };
 		A053DCDB26FE4A2C00E434E6 /* order.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = order.json; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 				A0588B5B26FB84AB00EC214D /* MenuViewController.swift */,
 				A09F3D9B27036A660071D2DD /* OrderViewController.swift */,
 				A0F3D1E327134CB50013B7DA /* SignViewController.swift */,
+				A042A2D327148C8500F1FF5D /* LogViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -473,6 +476,7 @@
 				A0F3D1E427134CB50013B7DA /* SignViewController.swift in Sources */,
 				A0588B2D26FB80D000EC214D /* MainViewController.swift in Sources */,
 				A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */,
+				A042A2D427148C8500F1FF5D /* LogViewController.swift in Sources */,
 				A0588B2926FB80D000EC214D /* AppDelegate.swift in Sources */,
 				A040E1AD2709FCA900A409DB /* DatabaseModel.swift in Sources */,
 				A0588B2B26FB80D000EC214D /* SceneDelegate.swift in Sources */,

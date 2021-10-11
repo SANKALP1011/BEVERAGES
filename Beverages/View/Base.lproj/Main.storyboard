@@ -42,7 +42,7 @@
                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <action selector="logOptionWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-8N-YnY"/>
+                                    <action selector="NextButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-8N-YnY"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,7 +53,7 @@
                         <outlet property="animationView" destination="3KY-0q-g91" id="YmU-A4-Tec"/>
                         <outlet property="mainLabel" destination="IUx-Mj-HtU" id="ouX-Ea-bcH"/>
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
-                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToMenu" id="xrQ-Ns-92Y"/>
+                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToMenu" id="Git-Tv-tP3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,34 +68,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="jkjhk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="giE-gp-Q8U">
-                                <rect key="frame" x="20" y="396" width="374" height="130"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNz-WE-vaH">
+                                <rect key="frame" x="20" y="448" width="374" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="jhkhk" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pxL-ab-IUN">
-                                <rect key="frame" x="20" y="639" width="374" height="98"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-g0-XTg">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="85"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-up-0oG">
+                                <rect key="frame" x="20" y="588" width="374" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5EO-NE-mRa">
-                                <rect key="frame" x="109" y="141" width="145" height="115"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="yourPassword..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmd-BN-ScG">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="83"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mD3-o4-cam">
+                                <rect key="frame" x="121" y="687" width="129" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="signButton:" destination="N5F-H0-Dvy" eventType="touchUpInside" id="a31-jH-jaQ"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te5-H5-WuJ">
+                                        <rect key="frame" x="-8" y="0.0" width="129" height="94"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="signButton:" destination="N5F-H0-Dvy" eventType="touchUpInside" id="e6N-gO-Oyg"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZsQ-w8-DUU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
-                        <outlet property="signButton" destination="5EO-NE-mRa" id="Y7q-K3-VPz"/>
-                        <outlet property="yourEmail" destination="giE-gp-Q8U" id="k18-w9-h7m"/>
-                        <outlet property="yourPassword" destination="pxL-ab-IUN" id="qwp-Ch-55C"/>
+                        <outlet property="emailView" destination="iNz-WE-vaH" id="J0v-lX-JCE"/>
+                        <outlet property="passwordView" destination="bRR-up-0oG" id="baA-8D-TDB"/>
+                        <outlet property="signButton" destination="te5-H5-WuJ" id="4Lh-SF-5xy"/>
+                        <outlet property="signView" destination="mD3-o4-cam" id="OXN-Eq-EaV"/>
+                        <outlet property="yourEmail" destination="xAf-g0-XTg" id="pLu-r2-TIP"/>
+                        <outlet property="yourPassword" destination="Pmd-BN-ScG" id="tNY-lS-pZi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3p-Y9-1CY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
