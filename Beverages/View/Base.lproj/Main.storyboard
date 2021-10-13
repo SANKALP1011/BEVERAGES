@@ -25,9 +25,22 @@
                                 </userDefinedRuntimeAttributes>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wzg-yn-2wP">
-                                <rect key="frame" x="114" y="655" width="180" height="88"/>
+                                <rect key="frame" x="117" y="597" width="180" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-XI-sXr">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="88"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <state key="normal" title="Sign In">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="NextButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-8N-YnY"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Beverage " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IUx-Mj-HtU">
                                 <rect key="frame" x="41" y="458" width="327" height="104"/>
@@ -36,24 +49,35 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhd-XI-sXr">
-                                <rect key="frame" x="114" y="655" width="180" height="88"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="w0f-vN-MIU">
+                                <rect key="frame" x="117" y="713" width="180" height="88"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
-                                <state key="normal" title="Next"/>
-                                <connections>
-                                    <action selector="NextButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rT9-8N-YnY"/>
-                                </connections>
-                            </button>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lG7-ih-lM4">
+                                        <rect key="frame" x="0.0" y="0.0" width="180" height="80"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="25"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logButtonWith_sender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ALN-1E-lQZ"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
                         <outlet property="animationView" destination="3KY-0q-g91" id="YmU-A4-Tec"/>
+                        <outlet property="logView" destination="w0f-vN-MIU" id="fh1-3L-Xir"/>
                         <outlet property="mainLabel" destination="IUx-Mj-HtU" id="ouX-Ea-bcH"/>
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
-                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToMenu" id="Git-Tv-tP3"/>
+                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToSign" id="Git-Tv-tP3"/>
+                        <segue destination="aTZ-2b-3iU" kind="presentation" identifier="goToLog" id="OVP-o5-IqC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -69,7 +93,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNz-WE-vaH">
-                                <rect key="frame" x="20" y="448" width="374" height="93"/>
+                                <rect key="frame" x="20" y="439" width="374" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xAf-g0-XTg">
@@ -95,11 +119,11 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mD3-o4-cam">
-                                <rect key="frame" x="121" y="687" width="129" height="94"/>
+                                <rect key="frame" x="113" y="699" width="187" height="84"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te5-H5-WuJ">
-                                        <rect key="frame" x="-8" y="0.0" width="129" height="94"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="187" height="86"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
                                         <state key="normal" title="Sign In">
@@ -123,18 +147,89 @@
                         <outlet property="signView" destination="mD3-o4-cam" id="OXN-Eq-EaV"/>
                         <outlet property="yourEmail" destination="xAf-g0-XTg" id="pLu-r2-TIP"/>
                         <outlet property="yourPassword" destination="Pmd-BN-ScG" id="tNY-lS-pZi"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="Ncz-Qs-sPT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3p-Y9-1CY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1328.985507246377" y="-472.09821428571428"/>
         </scene>
+        <!--Log View Controller-->
+        <scene sceneID="IXA-5i-xcq">
+            <objects>
+                <viewController id="aTZ-2b-3iU" customClass="LogViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ycS-7r-iiv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNU-Xz-fuZ">
+                                <rect key="frame" x="20" y="439" width="374" height="96"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your email..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6U8-Pz-Yqp">
+                                        <rect key="frame" x="0.0" y="0.0" width="366" height="96"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cke-0i-fih">
+                                <rect key="frame" x="20" y="543" width="374" height="91"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="your password..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dOM-xb-lOB">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="91"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RtS-I5-hhj">
+                                <rect key="frame" x="113" y="699" width="187" height="84"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SPj-Gp-Mh6">
+                                        <rect key="frame" x="0.0" y="0.0" width="179" height="84"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="26"/>
+                                        <state key="normal" title="Log">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="logButton:" destination="aTZ-2b-3iU" eventType="touchUpInside" id="B7K-AN-AeD"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vZL-SK-BYn"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <connections>
+                        <outlet property="emailView" destination="YNU-Xz-fuZ" id="jvr-i3-9Nv"/>
+                        <outlet property="logButton" destination="SPj-Gp-Mh6" id="FJY-aN-Qk6"/>
+                        <outlet property="logView" destination="RtS-I5-hhj" id="dMI-Jl-CXD"/>
+                        <outlet property="passView" destination="Cke-0i-fih" id="95p-2J-gjT"/>
+                        <outlet property="yourEmail" destination="6U8-Pz-Yqp" id="aft-ij-0ac"/>
+                        <outlet property="yourPassword" destination="dOM-xb-lOB" id="syF-U3-tE5"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="ILs-m3-gdT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zeg-1D-GQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1204" y="568"/>
+        </scene>
         <!--Menu View Controller-->
         <scene sceneID="Xs2-mm-5LP">
             <objects>
                 <viewController id="Qgr-WN-wgf" customClass="MenuViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9XS-tQ-gmL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-Qs-kIq" customClass="AnimationView" customModule="Lottie">
@@ -345,6 +440,9 @@
             <point key="canvasLocation" x="3254" y="120"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ILs-m3-gdT"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

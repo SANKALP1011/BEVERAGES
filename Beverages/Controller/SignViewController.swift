@@ -53,6 +53,7 @@ class SignViewController: UIViewController{
             }
             else{
                 print("signed in")
+                self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
         }
     }

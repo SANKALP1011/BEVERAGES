@@ -21,15 +21,38 @@ class LogViewController: UIViewController{
     
     private func setupUI(){
         
+        logView.layer.cornerRadius = 30
+        logView.layer.shadowOpacity = 0.5
+        logView.layer.shadowColor = UIColor.black.cgColor
+        logView.layer.shadowRadius = 5
+        logView.layer.shadowOffset = .zero
+        
+        emailView.layer.cornerRadius = 30
+        emailView.layer.shadowOpacity = 0.5
+        emailView.layer.shadowColor = UIColor.black.cgColor
+        emailView.layer.shadowRadius = 5
+        emailView.layer.shadowOffset = .zero
+        
+        passView.layer.cornerRadius = 30
+        passView.layer.shadowOpacity = 0.5
+        passView.layer.shadowColor = UIColor.black.cgColor
+        passView.layer.shadowRadius = 5
+        passView.layer.shadowOffset = .zero
+        
+        logButton.layer.cornerRadius = 30
+        yourEmail.layer.cornerRadius = 30
+        yourPassword.layer.cornerRadius = 30
+        
     }
     
     @IBAction func logButton(_ sender: UIButton!){
         Firebase.Auth.auth().signIn(withEmail: yourEmail.text!, password: yourPassword.text!) { (authResult,error) in
-            if error == nil{
+            if error != nil{
                 print(error?.localizedDescription)
             }
             else{
                 print("user Logged in")
+                self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
         }
     }

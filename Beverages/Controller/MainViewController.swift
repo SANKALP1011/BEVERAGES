@@ -13,7 +13,8 @@ class MainViewController: UIViewController {
     
     @IBOutlet var animationView: AnimationView!
     @IBOutlet var nextView: UIView!
-    
+    @IBOutlet var logView: UIView!
+    @IBOutlet var logButton: UIButton!
     @IBOutlet var mainLabel: UILabel!
     
     
@@ -43,9 +44,6 @@ class MainViewController: UIViewController {
         animationView.layer.shadowColor = UIColor.black.cgColor
         animationView.layer.shadowRadius = 5
         animationView.layer.shadowOffset = .zero
-   
-      
-        
 }
     
     private func LottieAnimation(){
@@ -56,7 +54,12 @@ class MainViewController: UIViewController {
 }
     
     @IBAction func NextButton(_sender: UIButton!){
-        performSegue(withIdentifier: "goToMenu", sender: self)
+        performSegue(withIdentifier: "goToSign", sender: self)
+    }
+    
+    @IBAction func logButton(_sender: UIButton!){
+        performSegue(withIdentifier: "goToLog", sender: self)
+        print("yes")
     }
     
 
