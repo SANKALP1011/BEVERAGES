@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Firebase
+import JGProgressHUD
 
 class SignViewController: UIViewController{
     

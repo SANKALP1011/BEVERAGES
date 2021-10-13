@@ -30,10 +30,10 @@ class MainViewController: UIViewController {
         for alphabets in text{
             print(alphabets)
     }
-    }
+}
     
     func setupUI(){
-        nextView.layer.cornerRadius = 20
+        nextView.layer.cornerRadius = 30
         nextView.layer.shadowOpacity = 0.5
         nextView.layer.shadowColor = UIColor.black.cgColor
         nextView.layer.shadowRadius = 5
@@ -44,6 +44,12 @@ class MainViewController: UIViewController {
         animationView.layer.shadowColor = UIColor.black.cgColor
         animationView.layer.shadowRadius = 5
         animationView.layer.shadowOffset = .zero
+        
+        logView.layer.cornerRadius = 30
+        logView.layer.shadowOpacity = 0.5
+        logView.layer.shadowColor = UIColor.black.cgColor
+        logView.layer.shadowRadius = 5
+        logView.layer.shadowOffset = .zero
 }
     
     private func LottieAnimation(){
