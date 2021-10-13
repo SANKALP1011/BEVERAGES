@@ -20,6 +20,8 @@ class LogViewController: UIViewController{
     @IBOutlet var yourEmail: UITextField!
     @IBOutlet var yourPassword: UITextField!
     
+    var spinner = JGProgressHUD(style: .dark)
+    
     private func setupUI(){
         
         logView.layer.cornerRadius = 30
@@ -47,6 +49,7 @@ class LogViewController: UIViewController{
     }
     
     @IBAction func logButton(_ sender: UIButton!){
+        self.spinner.show(in: self.view)
         Firebase.Auth.auth().signIn(withEmail: yourEmail.text!, password: yourPassword.text!) { (authResult,error) in
             if error != nil{
                 print(error?.localizedDescription)
@@ -56,5 +59,6 @@ class LogViewController: UIViewController{
                 self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
         }
+        spinner.dismiss()
     }
 }

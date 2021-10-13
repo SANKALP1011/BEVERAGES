@@ -19,6 +19,8 @@ class SignViewController: UIViewController{
     @IBOutlet var signButton: UIButton!
     @IBOutlet var signView: UIView!
     
+    let spinner = JGProgressHUD(style: .dark)
+    
     override func viewDidLoad() {
         setupUI()
     }
@@ -48,6 +50,7 @@ class SignViewController: UIViewController{
 }
     
     @IBAction func signButton(_ sender: UIButton!){
+        self.spinner.show(in: self.view)
         Firebase.Auth.auth().createUser(withEmail: yourEmail.text!, password: yourPassword.text!) { (authResult , error) in
             if error == nil{
                 print(error?.localizedDescription)
@@ -57,6 +60,8 @@ class SignViewController: UIViewController{
                 self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
         }
+        spinner.dismiss()
     }
+    
     
 }
