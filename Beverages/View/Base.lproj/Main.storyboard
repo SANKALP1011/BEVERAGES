@@ -106,7 +106,7 @@
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bRR-up-0oG">
-                                <rect key="frame" x="20" y="584" width="371" height="91"/>
+                                <rect key="frame" x="20" y="543" width="371" height="91"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="yourPassword..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Pmd-BN-ScG">
@@ -136,11 +136,20 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="NmO-wJ-5XH" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="23" y="52" width="368" height="257"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="auth"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ZsQ-w8-DUU"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="NmO-wJ-5XH" id="XJo-Gc-zGL"/>
                         <outlet property="emailView" destination="iNz-WE-vaH" id="J0v-lX-JCE"/>
                         <outlet property="passwordView" destination="bRR-up-0oG" id="baA-8D-TDB"/>
                         <outlet property="signButton" destination="te5-H5-WuJ" id="4Lh-SF-5xy"/>
@@ -206,11 +215,20 @@
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dkb-3E-3YS" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="23" y="59" width="368" height="232"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="animationName" value="auth"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vZL-SK-BYn"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <connections>
+                        <outlet property="animationView" destination="Dkb-3E-3YS" id="KIA-tb-gX8"/>
                         <outlet property="emailView" destination="YNU-Xz-fuZ" id="jvr-i3-9Nv"/>
                         <outlet property="logButton" destination="SPj-Gp-Mh6" id="FJY-aN-Qk6"/>
                         <outlet property="logView" destination="RtS-I5-hhj" id="dMI-Jl-CXD"/>
@@ -222,7 +240,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeg-1D-GQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1204" y="568"/>
+            <point key="canvasLocation" x="1202.8985507246377" y="567.1875"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="Xs2-mm-5LP">
@@ -312,7 +330,7 @@
                                         </connections>
                                     </stepper>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3rS-2C-evT">
-                                        <rect key="frame" x="190" y="22" width="11" height="21"/>
+                                        <rect key="frame" x="190" y="22" width="18" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -385,7 +403,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doI-mH-57s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2377" y="120"/>
+            <point key="canvasLocation" x="2376.811594202899" y="119.86607142857142"/>
         </scene>
         <!--Order View Controller-->
         <scene sceneID="Qmw-bV-68E">

@@ -9,9 +9,11 @@ import Foundation
 import UIKit
 import Firebase
 import JGProgressHUD
+import Lottie
 
 class SignViewController: UIViewController{
     
+    @IBOutlet weak var animationView: AnimationView!
     @IBOutlet var yourEmail: UITextField!
     @IBOutlet var emailView: UIView!
     @IBOutlet var yourPassword: UITextField!
@@ -23,6 +25,7 @@ class SignViewController: UIViewController{
     
     override func viewDidLoad() {
         setupUI()
+        LottieAnimation()
     }
     
     private func setupUI(){
@@ -49,10 +52,18 @@ class SignViewController: UIViewController{
         signButton.layer.cornerRadius = 30
 }
     
+    private func LottieAnimation(){
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        animationView.play()
+
+    }
+    
     @IBAction func signButton(_ sender: UIButton!){
         self.spinner.show(in: self.view)
         Firebase.Auth.auth().createUser(withEmail: yourEmail.text!, password: yourPassword.text!) { (authResult , error) in
-            if error == nil{
+            if error != nil{
                 print(error?.localizedDescription)
             }
             else{

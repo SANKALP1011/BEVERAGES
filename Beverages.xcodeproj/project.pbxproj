@@ -28,6 +28,7 @@
 		A0588B5C26FB84AB00EC214D /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0588B5B26FB84AB00EC214D /* MenuViewController.swift */; };
 		A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F3D9B27036A660071D2DD /* OrderViewController.swift */; };
 		A09F3D9E27036B230071D2DD /* Coffe.json in Resources */ = {isa = PBXBuildFile; fileRef = A09F3D9D27036B220071D2DD /* Coffe.json */; };
+		A0B23D6E27188D69002871CD /* auth.json in Resources */ = {isa = PBXBuildFile; fileRef = A0B23D6D27188D69002871CD /* auth.json */; };
 		A0F3D1E427134CB50013B7DA /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F3D1E327134CB50013B7DA /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -78,6 +79,7 @@
 		A0588B5B26FB84AB00EC214D /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		A09F3D9B27036A660071D2DD /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A09F3D9D27036B220071D2DD /* Coffe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coffe.json; sourceTree = "<group>"; };
+		A0B23D6D27188D69002871CD /* auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auth.json; sourceTree = "<group>"; };
 		A0F3D1E327134CB50013B7DA /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		A5987509EB52768B8877A7CC /* Pods_Beverages_BeveragesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beverages_BeveragesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF46E4831750A30F9FC14272 /* Pods-BeveragesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeveragesTests.debug.xcconfig"; path = "Target Support Files/Pods-BeveragesTests/Pods-BeveragesTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				A0588B3326FB80D100EC214D /* LaunchScreen.storyboard */,
 				A0588B3626FB80D100EC214D /* Info.plist */,
 				A053DCD926FE4A2200E434E6 /* tea.json */,
+				A0B23D6D27188D69002871CD /* auth.json */,
 				A053DCDB26FE4A2C00E434E6 /* order.json */,
 				A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */,
 				A09F3D9D27036B220071D2DD /* Coffe.json */,
@@ -342,6 +345,7 @@
 				A0588B3526FB80D100EC214D /* LaunchScreen.storyboard in Resources */,
 				A0588B3226FB80D100EC214D /* Assets.xcassets in Resources */,
 				A053DCDA26FE4A2200E434E6 /* tea.json in Resources */,
+				A0B23D6E27188D69002871CD /* auth.json in Resources */,
 				A053DCDC26FE4A2C00E434E6 /* order.json in Resources */,
 				A0588B3026FB80D000EC214D /* Main.storyboard in Resources */,
 				A04B2DFF27075A6A00C47874 /* GoogleService-Info.plist in Resources */,

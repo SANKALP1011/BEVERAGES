@@ -10,9 +10,11 @@ import  UIKit
 import SwiftUI
 import Firebase
 import JGProgressHUD
+import Lottie
 
 class LogViewController: UIViewController{
     
+    @IBOutlet weak var animationView: AnimationView!
     @IBOutlet var logView: UIView!
     @IBOutlet var logButton: UIButton!
     @IBOutlet var emailView: UIView!
@@ -21,6 +23,11 @@ class LogViewController: UIViewController{
     @IBOutlet var yourPassword: UITextField!
     
     var spinner = JGProgressHUD(style: .dark)
+    
+    override func viewDidLoad() {
+        setupUI()
+        lottieAniamtion()
+    }
     
     private func setupUI(){
         
@@ -46,6 +53,14 @@ class LogViewController: UIViewController{
         yourEmail.layer.cornerRadius = 30
         yourPassword.layer.cornerRadius = 30
         
+    }
+    
+    private func lottieAniamtion(){
+        animationView.contentMode = .scaleAspectFit
+        animationView.loopMode = .loop
+        animationView.animationSpeed = 1
+        animationView.play()
+
     }
     
     @IBAction func logButton(_ sender: UIButton!){
