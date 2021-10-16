@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		55BB012031E9659E056CF903 /* Pods_Beverages_BeveragesUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A5987509EB52768B8877A7CC /* Pods_Beverages_BeveragesUITests.framework */; };
-		6C9327DA03DD603E25670F7A /* Pods_BeveragesTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 68FE316EAFF6F744AF2E7E07 /* Pods_BeveragesTests.framework */; };
-		78B68FA962E4006C140EB0D0 /* Pods_Beverages.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65512A2B3F46586BCBCCDF41 /* Pods_Beverages.framework */; };
 		A0021EDB271097F0008F5886 /* JGProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = A0021EDA271097F0008F5886 /* JGProgressHUD */; };
+		A02BBA8D271A8BC10004D1DB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = A02BBA8C271A8BC10004D1DB /* FirebaseAuth */; };
+		A02BBA8F271A8BC10004D1DB /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = A02BBA8E271A8BC10004D1DB /* FirebaseDatabase */; };
+		A02BBA91271A8BC10004D1DB /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = A02BBA90271A8BC10004D1DB /* FirebaseAnalytics */; };
 		A034D12C26FDF2AE00A8E884 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = A034D12B26FDF2AE00A8E884 /* Lottie */; };
 		A040E1AD2709FCA900A409DB /* DatabaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A040E1AC2709FCA900A409DB /* DatabaseModel.swift */; };
 		A042A2D427148C8500F1FF5D /* LogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A042A2D327148C8500F1FF5D /* LogViewController.swift */; };
@@ -50,13 +50,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		01FF7DAEA021F6CDEB82AB56 /* Pods-Beverages-BeveragesUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beverages-BeveragesUITests.debug.xcconfig"; path = "Target Support Files/Pods-Beverages-BeveragesUITests/Pods-Beverages-BeveragesUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		0F965EE885EB7A9D4A56780B /* Pods-Beverages-BeveragesUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beverages-BeveragesUITests.release.xcconfig"; path = "Target Support Files/Pods-Beverages-BeveragesUITests/Pods-Beverages-BeveragesUITests.release.xcconfig"; sourceTree = "<group>"; };
-		181A437DEF2A2E685D00A838 /* Pods-Beverages.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beverages.debug.xcconfig"; path = "Target Support Files/Pods-Beverages/Pods-Beverages.debug.xcconfig"; sourceTree = "<group>"; };
-		3DE075429B3B03C474074FDA /* Pods-Beverages.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beverages.release.xcconfig"; path = "Target Support Files/Pods-Beverages/Pods-Beverages.release.xcconfig"; sourceTree = "<group>"; };
-		65512A2B3F46586BCBCCDF41 /* Pods_Beverages.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beverages.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		68FE316EAFF6F744AF2E7E07 /* Pods_BeveragesTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BeveragesTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		982C19F9500D75833D84DF30 /* Pods-BeveragesTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeveragesTests.release.xcconfig"; path = "Target Support Files/Pods-BeveragesTests/Pods-BeveragesTests.release.xcconfig"; sourceTree = "<group>"; };
 		A040E1AC2709FCA900A409DB /* DatabaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseModel.swift; sourceTree = "<group>"; };
 		A042A2D327148C8500F1FF5D /* LogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogViewController.swift; sourceTree = "<group>"; };
 		A04B2DFE27075A6A00C47874 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -81,8 +74,6 @@
 		A09F3D9D27036B220071D2DD /* Coffe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coffe.json; sourceTree = "<group>"; };
 		A0B23D6D27188D69002871CD /* auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auth.json; sourceTree = "<group>"; };
 		A0F3D1E327134CB50013B7DA /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
-		A5987509EB52768B8877A7CC /* Pods_Beverages_BeveragesUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beverages_BeveragesUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF46E4831750A30F9FC14272 /* Pods-BeveragesTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BeveragesTests.debug.xcconfig"; path = "Target Support Files/Pods-BeveragesTests/Pods-BeveragesTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,8 +82,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0021EDB271097F0008F5886 /* JGProgressHUD in Frameworks */,
+				A02BBA8D271A8BC10004D1DB /* FirebaseAuth in Frameworks */,
+				A02BBA8F271A8BC10004D1DB /* FirebaseDatabase in Frameworks */,
+				A02BBA91271A8BC10004D1DB /* FirebaseAnalytics in Frameworks */,
 				A034D12C26FDF2AE00A8E884 /* Lottie in Frameworks */,
-				78B68FA962E4006C140EB0D0 /* Pods_Beverages.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,7 +93,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6C9327DA03DD603E25670F7A /* Pods_BeveragesTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,26 +100,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				55BB012031E9659E056CF903 /* Pods_Beverages_BeveragesUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		88798BCAEEC6DE32DD86FADE /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				181A437DEF2A2E685D00A838 /* Pods-Beverages.debug.xcconfig */,
-				3DE075429B3B03C474074FDA /* Pods-Beverages.release.xcconfig */,
-				01FF7DAEA021F6CDEB82AB56 /* Pods-Beverages-BeveragesUITests.debug.xcconfig */,
-				0F965EE885EB7A9D4A56780B /* Pods-Beverages-BeveragesUITests.release.xcconfig */,
-				BF46E4831750A30F9FC14272 /* Pods-BeveragesTests.debug.xcconfig */,
-				982C19F9500D75833D84DF30 /* Pods-BeveragesTests.release.xcconfig */,
-			);
-			path = Pods;
-			sourceTree = "<group>";
-		};
 		A040E1AB2709FC8E00A409DB /* Database */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,8 +121,6 @@
 				A0588B3E26FB80D100EC214D /* BeveragesTests */,
 				A0588B4926FB80D100EC214D /* BeveragesUITests */,
 				A0588B2626FB80D000EC214D /* Products */,
-				A0F0A01D270FF8A500A270D7 /* Frameworks */,
-				88798BCAEEC6DE32DD86FADE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -216,16 +192,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A0F0A01D270FF8A500A270D7 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				65512A2B3F46586BCBCCDF41 /* Pods_Beverages.framework */,
-				A5987509EB52768B8877A7CC /* Pods_Beverages_BeveragesUITests.framework */,
-				68FE316EAFF6F744AF2E7E07 /* Pods_BeveragesTests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -233,11 +199,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0588B4F26FB80D100EC214D /* Build configuration list for PBXNativeTarget "Beverages" */;
 			buildPhases = (
-				5B8713BEFB19C5ACDC9E1087 /* [CP] Check Pods Manifest.lock */,
 				A0588B2126FB80D000EC214D /* Sources */,
 				A0588B2226FB80D000EC214D /* Frameworks */,
 				A0588B2326FB80D000EC214D /* Resources */,
-				6A6F4C218526F69C66157400 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,6 +211,9 @@
 			packageProductDependencies = (
 				A034D12B26FDF2AE00A8E884 /* Lottie */,
 				A0021EDA271097F0008F5886 /* JGProgressHUD */,
+				A02BBA8C271A8BC10004D1DB /* FirebaseAuth */,
+				A02BBA8E271A8BC10004D1DB /* FirebaseDatabase */,
+				A02BBA90271A8BC10004D1DB /* FirebaseAnalytics */,
 			);
 			productName = Beverages;
 			productReference = A0588B2526FB80D000EC214D /* Beverages.app */;
@@ -256,7 +223,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0588B5226FB80D100EC214D /* Build configuration list for PBXNativeTarget "BeveragesTests" */;
 			buildPhases = (
-				D57D9F6D70F6D0C558932328 /* [CP] Check Pods Manifest.lock */,
 				A0588B3726FB80D100EC214D /* Sources */,
 				A0588B3826FB80D100EC214D /* Frameworks */,
 				A0588B3926FB80D100EC214D /* Resources */,
@@ -275,11 +241,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A0588B5526FB80D100EC214D /* Build configuration list for PBXNativeTarget "BeveragesUITests" */;
 			buildPhases = (
-				27F021C7206CD2A7DC24D3EA /* [CP] Check Pods Manifest.lock */,
 				A0588B4226FB80D100EC214D /* Sources */,
 				A0588B4326FB80D100EC214D /* Frameworks */,
 				A0588B4426FB80D100EC214D /* Resources */,
-				96D82D2D741CCEC030722378 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -325,6 +289,7 @@
 			packageReferences = (
 				A034D12A26FDF2AE00A8E884 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				A0021ED9271097F0008F5886 /* XCRemoteSwiftPackageReference "JGProgressHUD" */,
+				A02BBA8B271A8BC10004D1DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 			);
 			productRefGroup = A0588B2626FB80D000EC214D /* Products */;
 			projectDirPath = "";
@@ -368,109 +333,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		27F021C7206CD2A7DC24D3EA /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Beverages-BeveragesUITests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5B8713BEFB19C5ACDC9E1087 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-Beverages-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6A6F4C218526F69C66157400 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beverages/Pods-Beverages-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beverages/Pods-Beverages-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beverages/Pods-Beverages-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		96D82D2D741CCEC030722378 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beverages-BeveragesUITests/Pods-Beverages-BeveragesUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-Beverages-BeveragesUITests/Pods-Beverages-BeveragesUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beverages-BeveragesUITests/Pods-Beverages-BeveragesUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		D57D9F6D70F6D0C558932328 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BeveragesTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		A0588B2126FB80D000EC214D /* Sources */ = {
@@ -657,7 +519,6 @@
 		};
 		A0588B5026FB80D100EC214D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 181A437DEF2A2E685D00A838 /* Pods-Beverages.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -677,7 +538,6 @@
 		};
 		A0588B5126FB80D100EC214D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DE075429B3B03C474074FDA /* Pods-Beverages.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -697,7 +557,6 @@
 		};
 		A0588B5326FB80D100EC214D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF46E4831750A30F9FC14272 /* Pods-BeveragesTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -720,7 +579,6 @@
 		};
 		A0588B5426FB80D100EC214D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 982C19F9500D75833D84DF30 /* Pods-BeveragesTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -743,7 +601,6 @@
 		};
 		A0588B5626FB80D100EC214D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 01FF7DAEA021F6CDEB82AB56 /* Pods-Beverages-BeveragesUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -764,7 +621,6 @@
 		};
 		A0588B5726FB80D100EC214D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F965EE885EB7A9D4A56780B /* Pods-Beverages-BeveragesUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -833,6 +689,14 @@
 				minimumVersion = 2.2.0;
 			};
 		};
+		A02BBA8B271A8BC10004D1DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.8.1;
+			};
+		};
 		A034D12A26FDF2AE00A8E884 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
@@ -848,6 +712,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = A0021ED9271097F0008F5886 /* XCRemoteSwiftPackageReference "JGProgressHUD" */;
 			productName = JGProgressHUD;
+		};
+		A02BBA8C271A8BC10004D1DB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A02BBA8B271A8BC10004D1DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		A02BBA8E271A8BC10004D1DB /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A02BBA8B271A8BC10004D1DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+		A02BBA90271A8BC10004D1DB /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A02BBA8B271A8BC10004D1DB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
 		};
 		A034D12B26FDF2AE00A8E884 /* Lottie */ = {
 			isa = XCSwiftPackageProductDependency;
