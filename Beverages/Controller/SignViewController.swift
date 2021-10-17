@@ -11,6 +11,7 @@ import Firebase
 import JGProgressHUD
 import Lottie
 
+
 class SignViewController: UIViewController{
     
     @IBOutlet weak var animationView: AnimationView!
@@ -61,15 +62,23 @@ class SignViewController: UIViewController{
     }
     
     @IBAction func signButton(_ sender: UIButton!){
+        DatabaseModel.sharedData.checkNewUser(with: yourEmail.text!) { (exists) in
+          guard !exists
+          else{
+            return
+          }
+        }
         self.spinner.show(in: self.view)
         Firebase.Auth.auth().createUser(withEmail: yourEmail.text!, password: yourPassword.text!) { (authResult , error) in
             if error != nil{
                 print(error?.localizedDescription)
             }
             else{
+                
                 print("signed in")
                 self.performSegue(withIdentifier: "goToMenu", sender: self)
             }
+            DatabaseModel.sharedData.addUser(with: user(email: self.yourEmail.text!))
         }
         spinner.dismiss()
     }
