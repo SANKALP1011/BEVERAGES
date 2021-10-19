@@ -78,6 +78,7 @@
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
                         <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToSign" id="Git-Tv-tP3"/>
                         <segue destination="aTZ-2b-3iU" kind="presentation" identifier="goToLog" id="OVP-o5-IqC"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="PeF-DG-R0r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -459,7 +460,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="ILs-m3-gdT"/>
+        <segue reference="PeF-DG-R0r"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">

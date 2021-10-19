@@ -8,6 +8,7 @@
 import UIKit
 import Lottie
 import JGProgressHUD
+import Firebase
 
 class MainViewController: UIViewController {
     
@@ -26,6 +27,7 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         setupUI()
         LottieAnimation()
+        authUser()
         
         for alphabets in text{
             print(alphabets)
@@ -58,6 +60,15 @@ class MainViewController: UIViewController {
         animationView.animationSpeed = 1
         animationView.play()
 }
+    
+    private func authUser(){
+        if Firebase.Auth.auth().currentUser != nil{
+            performSegue(withIdentifier: "goToMenu", sender: self)
+        }
+        else{
+            performSegue(withIdentifier: "goToSign", sender: self)
+        }
+    }
     
     @IBAction func NextButton(_sender: UIButton!){
         performSegue(withIdentifier: "goToSign", sender: self)
