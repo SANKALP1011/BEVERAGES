@@ -18,8 +18,6 @@ class MainViewController: UIViewController {
     @IBOutlet var logButton: UIButton!
     @IBOutlet var mainLabel: UILabel!
     
-    
-    
     private let spinner = JGProgressHUD(style: .dark)
     var text = "Beverages"
 
