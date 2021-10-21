@@ -13,6 +13,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     FirebaseApp.configure()
+    
+    if Firebase.Auth.auth().currentUser != nil{
+        let vc = MenuViewController()
+        let controller = UINavigationController(rootViewController: vc)
+    }
+    else{
+        print(<#T##items: Any...##Any#>)
+    }
         return true
     }
 

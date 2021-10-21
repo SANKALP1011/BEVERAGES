@@ -61,9 +61,11 @@ class MainViewController: UIViewController {
     
     private func authUser(){
         if Firebase.Auth.auth().currentUser != nil{
+            print("yes")
             performSegue(withIdentifier: "goToMenu", sender: self)
         }
         else{
+            print("no")
             performSegue(withIdentifier: "goToSign", sender: self)
         }
     }
