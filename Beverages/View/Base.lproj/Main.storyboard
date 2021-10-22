@@ -76,9 +76,9 @@
                         <outlet property="logView" destination="w0f-vN-MIU" id="fh1-3L-Xir"/>
                         <outlet property="mainLabel" destination="IUx-Mj-HtU" id="ouX-Ea-bcH"/>
                         <outlet property="nextView" destination="wzg-yn-2wP" id="X4z-W6-s8E"/>
-                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToSign" id="Git-Tv-tP3"/>
-                        <segue destination="aTZ-2b-3iU" kind="presentation" identifier="goToLog" id="OVP-o5-IqC"/>
-                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToOrder" id="PeF-DG-R0r"/>
+                        <segue destination="N5F-H0-Dvy" kind="presentation" identifier="goToSign" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Git-Tv-tP3"/>
+                        <segue destination="aTZ-2b-3iU" kind="presentation" identifier="goToLog" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="OVP-o5-IqC"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToOrder" modalTransitionStyle="crossDissolve" id="PeF-DG-R0r"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -90,7 +90,7 @@
             <objects>
                 <viewController id="N5F-H0-Dvy" customClass="SignViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cml-Xn-c4e">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iNz-WE-vaH">
@@ -157,7 +157,7 @@
                         <outlet property="signView" destination="mD3-o4-cam" id="OXN-Eq-EaV"/>
                         <outlet property="yourEmail" destination="xAf-g0-XTg" id="pLu-r2-TIP"/>
                         <outlet property="yourPassword" destination="Pmd-BN-ScG" id="tNY-lS-pZi"/>
-                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="Ncz-Qs-sPT"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="Ncz-Qs-sPT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z3p-Y9-1CY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -169,7 +169,7 @@
             <objects>
                 <viewController id="aTZ-2b-3iU" customClass="LogViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ycS-7r-iiv">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNU-Xz-fuZ">
@@ -236,7 +236,7 @@
                         <outlet property="passView" destination="Cke-0i-fih" id="95p-2J-gjT"/>
                         <outlet property="yourEmail" destination="6U8-Pz-Yqp" id="aft-ij-0ac"/>
                         <outlet property="yourPassword" destination="dOM-xb-lOB" id="syF-U3-tE5"/>
-                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" id="ILs-m3-gdT"/>
+                        <segue destination="Qgr-WN-wgf" kind="presentation" identifier="goToMenu" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="ILs-m3-gdT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zeg-1D-GQd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -248,7 +248,7 @@
             <objects>
                 <viewController id="Qgr-WN-wgf" customClass="MenuViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9XS-tQ-gmL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eZm-Qs-kIq" customClass="AnimationView" customModule="Lottie">
@@ -399,7 +399,7 @@
                         <outlet property="teaLabel" destination="umd-gU-qe8" id="AYf-ho-mSp"/>
                         <outlet property="teaQunatity" destination="3rS-2C-evT" id="d9D-2P-quN"/>
                         <outlet property="teaView" destination="eRZ-Lf-HkO" id="bGS-UV-zX0"/>
-                        <segue destination="dvv-Bo-KlZ" kind="presentation" identifier="goToOrder" id="rxq-Ri-KBj"/>
+                        <segue destination="dvv-Bo-KlZ" kind="presentation" identifier="goToOrder" modalPresentationStyle="fullScreen" modalTransitionStyle="flipHorizontal" id="rxq-Ri-KBj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="doI-mH-57s" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -411,7 +411,7 @@
             <objects>
                 <viewController id="dvv-Bo-KlZ" customClass="OrderViewController" customModule="Beverages" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V83-vk-XoG">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OG3-Ux-b1f" customClass="AnimationView" customModule="Lottie">
@@ -460,7 +460,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="PeF-DG-R0r"/>
+        <segue reference="ILs-m3-gdT"/>
     </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
