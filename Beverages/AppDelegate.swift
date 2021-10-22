@@ -19,7 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let controller = UINavigationController(rootViewController: vc)
     }
     else{
-        print(<#T##items: Any...##Any#>)
+        print("no")
     }
         return true
     }
