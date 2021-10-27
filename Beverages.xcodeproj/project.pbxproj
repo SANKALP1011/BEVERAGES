@@ -29,6 +29,7 @@
 		A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A09F3D9B27036A660071D2DD /* OrderViewController.swift */; };
 		A09F3D9E27036B230071D2DD /* Coffe.json in Resources */ = {isa = PBXBuildFile; fileRef = A09F3D9D27036B220071D2DD /* Coffe.json */; };
 		A0B23D6E27188D69002871CD /* auth.json in Resources */ = {isa = PBXBuildFile; fileRef = A0B23D6D27188D69002871CD /* auth.json */; };
+		A0D45B192729E7F200864BE5 /* RecipieViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0D45B182729E7F100864BE5 /* RecipieViewController.swift */; };
 		A0F3D1E427134CB50013B7DA /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F3D1E327134CB50013B7DA /* SignViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -73,6 +74,7 @@
 		A09F3D9B27036A660071D2DD /* OrderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderViewController.swift; sourceTree = "<group>"; };
 		A09F3D9D27036B220071D2DD /* Coffe.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Coffe.json; sourceTree = "<group>"; };
 		A0B23D6D27188D69002871CD /* auth.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = auth.json; sourceTree = "<group>"; };
+		A0D45B182729E7F100864BE5 /* RecipieViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipieViewController.swift; sourceTree = "<group>"; };
 		A0F3D1E327134CB50013B7DA /* SignViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -184,6 +186,7 @@
 		A0588B5826FB811D00EC214D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A0D45B172729E7CE00864BE5 /* Recipies  */,
 				A03B70CE272464CE00AE8E13 /* User Authnetication */,
 				A0588B2C26FB80D000EC214D /* MainViewController.swift */,
 				A0588B5B26FB84AB00EC214D /* MenuViewController.swift */,
@@ -198,6 +201,14 @@
 				A0588B2E26FB80D000EC214D /* Main.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A0D45B172729E7CE00864BE5 /* Recipies  */ = {
+			isa = PBXGroup;
+			children = (
+				A0D45B182729E7F100864BE5 /* RecipieViewController.swift */,
+			);
+			path = "Recipies ";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -348,6 +359,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A0F3D1E427134CB50013B7DA /* SignViewController.swift in Sources */,
+				A0D45B192729E7F200864BE5 /* RecipieViewController.swift in Sources */,
 				A0588B2D26FB80D000EC214D /* MainViewController.swift in Sources */,
 				A09F3D9C27036A660071D2DD /* OrderViewController.swift in Sources */,
 				A042A2D427148C8500F1FF5D /* LogViewController.swift in Sources */,
